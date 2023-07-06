@@ -1,0 +1,14 @@
+{
+  "name": "mapty",
+  "version": "1.0.0",
+  "description": "Deciding  working out location in your area ",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Ravinder Rangera",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
