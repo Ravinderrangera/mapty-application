@@ -92,7 +92,7 @@ class App {
     this._getPosition();
     // Get data from local storage
     this._getLocalStorage();
-
+    this.addnewFeature();
     // Attach event handlers
     form.addEventListener('submit', this._newWorkout.bind(this)); //now keep in mind that this method here is basically an 'event-handler' function. It's a function that's gonna be called by an "event listner".
     //And an event handler, 'function' will always have the "this" keyword of the "DOM element" onto which it is 'attatched'. And in this case that's gonna be the "form element". So again inside of the '_newWorkout' method here the "this keyword" is gonna point on 'Form' and no longer to the "app object".
@@ -104,7 +104,9 @@ class App {
 
     containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
   }
-
+  addnewFeature() {
+    console.log('WElcome ot the application!');
+  }
   _getPosition() {
     if (navigator.geolocation)
       //just to make sure that we don't get any errors in an old browser, we can test if this navigator.geolocation actually exists.
