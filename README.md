@@ -1,3 +1,3 @@
 # mapty Project
 
-Workout application including locations where you want to do it.
+Set running/cycling location in your area using our mapty tool. 
